@@ -1,0 +1,29 @@
+[project]
+name = "djdockerproject"
+version = "1.0"
+description = ""
+authors = [
+    {name = "SahanSrinivas",email = "26sahan@gmail.com"}
+]
+
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django (>=5.1.7,<6.0.0)",
+    "djangorestframework (>=3.15.2,<4.0.0)",
+    "gunicorn (>=23.0.0,<24.0.0)",
+    "azure-core (>=1.32.0,<2.0.0)",
+    "azure-identity (>=1.21.0,<2.0.0)",
+    "azure-keyvault-secrets (>=4.9.0,<5.0.0)",
+    "azure-storage-blob (>=12.25.0,<13.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "mssql (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{ include = "core" }]

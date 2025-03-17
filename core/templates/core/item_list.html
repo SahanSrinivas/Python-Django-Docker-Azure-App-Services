@@ -1,0 +1,19 @@
+<!-- core/templates/core/item_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item List</title>
+</head>
+<body>
+    <h2>Item List</h2>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }}: {{ item.description }}</li>
+        {% empty %}
+            <li>No items available.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_item' %}">Add new item</a>
+</body>
+</html>

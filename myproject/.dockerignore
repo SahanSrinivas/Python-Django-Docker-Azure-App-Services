@@ -1,0 +1,67 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+*.env
+
+# Poetry
+poetry.lock
+pyproject.toml
+
+# User specific folder
+**/srinivassahankolluri/django-test/
+
+# Git
+.git/
+.gitignore
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Local development settings
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files (if collected locally)
+media/
+staticfiles/
+
+# Documentation
+docs/
+README.md
